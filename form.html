@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projet 9</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Bienvenue sur le système de recommandation des livres!</h1>
+    </div>
+
+    <div class="container">
+        <div class="form">
+            <form method="post" action="/recommend/" style="padding:2% 0">
+                <textarea name="user" placeholder="Mettez un user id ...." style="width:100%; font-size:17px"></textarea>
+                <div class="buttonHolder" style="text-align: center; padding:20px">
+                    <button class="button is-primary is-small" type="submit" style="padding:10px; font-size:17px">Recommender</button>
+                </div>
+            </form>
+            <p id="prediction_text" style="text-align: center; font-size: 17px; color: rebeccapurple">{{ prediction_text }}</p>
+        </div>
+    </div>
+</body>
+</html>
